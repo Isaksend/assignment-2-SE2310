@@ -1,3 +1,5 @@
+package moduls;
+
 public class Employee extends Person {
     private String position;
     private double salary;
@@ -30,7 +32,7 @@ public class Employee extends Person {
 
     @Override
     public String toString() {
-        return "Employee: " + super.toString() + " earns " + this.salary;
+        return "moduls.Employee: " + super.toString() + " earns " + this.salary;
     }
 
     @Override

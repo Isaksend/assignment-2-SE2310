@@ -1,3 +1,5 @@
+package moduls;
+
 public class Student extends Person {
     private double gpa;
 
@@ -20,11 +22,11 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return "Student: " + super.toString() + " earns " + this.getPaymentAmount();
+        return "moduls.Student: " + super.toString() + " earns " + this.getPaymentAmount();
     }
 
     @Override
-    public double getPaymentAmount() {
+    public final double getPaymentAmount() {
         if (this.gpa > 2.67) {
             return 36660.00;
         } else {

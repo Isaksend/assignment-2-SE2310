@@ -1,6 +1,8 @@
+package moduls;
+import interfaces.Payable;
 public class Person implements Payable, Comparable<Person> {
     private static int idCounter = 0;
-    private final int id;
+    private int id;
     private String name;
     private String surname;
 
@@ -35,7 +37,7 @@ public class Person implements Payable, Comparable<Person> {
     }
 
     public String getPosition() {
-        return "Student";
+        return "moduls.Student";
     }
 
     @Override
